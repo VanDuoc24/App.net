@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<section class="hero-banner">
+    <div class="hero-copy">
+        <p class="eyebrow">Bộ sưu tập mới 2026</p>
+        <h1>Phụ kiện có cá tính riêng.</h1>
+        <p>Những thiết kế được chọn lọc để đồng hành cùng nhịp sống hiện đại.</p>
+        <a class="button button-light" asp-controller="Product" asp-action="Index">Khám phá sản phẩm</a>
+    </div>
+</section>
+
+<section class="home-section">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">Tuyển chọn hôm nay</p>
+            <h2>Danh sách sản phẩm</h2>
+        </div>
+        <a class="text-link" asp-controller="Product" asp-action="Index">Xem tất cả <span aria-hidden="true">-&gt;</span></a>
+    </div>
+    <div class="product-grid">
+        <article class="product-card"><div class="product-image product-image-one"></div><h3>Classic Noir</h3><p>1.290.000 đ</p></article>
+        <article class="product-card"><div class="product-image product-image-two"></div><h3>Cherry Weekender</h3><p>1.490.000 đ</p></article>
+        <article class="product-card"><div class="product-image product-image-three"></div><h3>Urban Weave</h3><p>1.350.000 đ</p></article>
+        <article class="product-card"><div class="product-image product-image-four"></div><h3>Ruby Carryall</h3><p>1.590.000 đ</p></article>
+    </div>
+</section>

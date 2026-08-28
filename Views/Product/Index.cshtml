@@ -1,0 +1,23 @@
+@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Sản phẩm";
+}
+
+<section class="content-page product-page">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">Danh mục / Tất cả</p>
+            <h1>Sản phẩm</h1>
+        </div>
+        <span class="product-count">@Model.Count() sản phẩm</span>
+    </div>
+    <div class="product-grid product-grid-large">
+        @foreach (var product in Model)
+        {
+            <article class="product-card">
+                <div class="product-image @product.ImageClass"></div>
+                <div class="product-meta"><div><h2>@product.Name</h2><p>@product.Description</p></div><strong>@product.Price.ToString("N0") đ</strong></div>
+            </article>
+        }
+    </div>
+</section>

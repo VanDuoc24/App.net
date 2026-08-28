@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyAppMVC</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Điều hướng chính">
+            <a class="brand" asp-controller="Home" asp-action="Index">MyAppMVC</a>
+            <div class="nav-links">
+                <a asp-controller="Home" asp-action="Index">Trang chủ</a>
+                <a asp-controller="Demo" asp-action="Index">Giới thiệu</a>
+                <a asp-controller="Product" asp-action="Index">Sản phẩm</a>
+            </div>
+            <a class="nav-contact" href="mailto:hello@myappmvc.local">Liên hệ <span aria-hidden="true">-&gt;</span></a>
+        </nav>
+    </header>
+    <main>@RenderBody()</main>
+    <footer class="site-footer"><span>© 2026 MyAppMVC</span><span>Thiết kế cho những ngày nhiều cảm hứng.</span></footer>
+</body>
+</html>

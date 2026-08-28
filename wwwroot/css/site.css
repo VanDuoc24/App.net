@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { margin: 0; color: #222; background: #fff; font-family: Arial, Helvetica, sans-serif; }
+a { color: #0645ad; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.site-header { border-bottom: 1px solid #ccc; }
+.site-nav { max-width: 1100px; margin: auto; padding: 16px 20px; display: flex; align-items: center; gap: 24px; }
+.brand { margin-right: auto; color: #222; font-size: 1.25rem; font-weight: bold; }
+.nav-links { display: flex; gap: 18px; }.nav-contact { white-space: nowrap; }
+.hero-banner, .home-section, .content-page { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+.hero-banner { padding-top: 20px; padding-bottom: 30px; border-bottom: 1px solid #ccc; }
+.hero-copy { max-width: 650px; }.eyebrow { margin: 0 0 10px; color: #555; font-size: .8rem; font-weight: bold; text-transform: uppercase; }
+h1 { margin: 0 0 16px; font-size: 2.4rem; } h2 { margin: 0 0 16px; font-size: 1.7rem; }
+.hero-copy p:not(.eyebrow), .lead { line-height: 1.5; }.button { display: inline-block; margin-top: 10px; padding: 9px 14px; border: 1px solid #777; background: #f2f2f2; color: #222; }.button:hover { background: #e5e5e5; text-decoration: none; }
+.section-heading { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 18px; }.text-link { font-size: .9rem; }.product-count { color: #555; font-size: .9rem; }
+.product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }.product-card { border: 1px solid #ccc; padding: 10px; }.product-image { height: 180px; margin-bottom: 12px; background: #eee; border-bottom: 1px solid #ccc; }.product-card h3, .product-card h2 { margin: 0 0 6px; font-size: 1rem; }.product-card p { margin: 0; color: #555; font-size: .9rem; }.product-meta { display: flex; justify-content: space-between; gap: 12px; }.product-meta strong { white-space: nowrap; font-size: .9rem; }.product-grid-large { grid-template-columns: repeat(2, 1fr); }.product-grid-large .product-image { height: 220px; }
+.site-footer { max-width: 1100px; margin: 60px auto 0; padding: 16px 20px; border-top: 1px solid #ccc; display: flex; justify-content: space-between; color: #555; font-size: .8rem; }
+@media (max-width: 700px) { .site-nav { flex-wrap: wrap; }.nav-links { order: 3; width: 100%; }.section-heading { align-items: start; flex-direction: column; gap: 8px; }.product-grid, .product-grid-large { grid-template-columns: repeat(2, 1fr); }.product-image, .product-grid-large .product-image { height: 140px; }.site-footer { flex-direction: column; gap: 8px; } }
